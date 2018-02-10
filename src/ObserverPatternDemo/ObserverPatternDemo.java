@@ -21,16 +21,18 @@ public class ObserverPatternDemo {
 		IdNumberObserver idObserver =  new IdNumberObserver();
 		FirstNameObserver firstNameObserver = new FirstNameObserver();
 		EmailObserver emailObserver = new EmailObserver();
+		CourseObserver courseObserver = new CourseObserver();
 
 		student.attachObserver(idObserver);
 		student.attachObserver(firstNameObserver);
 		student.attachObserver(emailObserver);
+		student.attachObserver(courseObserver);
 
 		student.setFirstName("Zo");
 		student.setIdNumber(11991188);
 		student.setEmail("zohar.suslovich@shu.edu");
-		student.addCourse(CSAS4118);
-		student.addCourse(CSAS4119);
+        student.addCourse(CSAS4118);
+        student.addCourse(CSAS4119);
 		student.removeCourse(CSAS4117);
 
 	}
