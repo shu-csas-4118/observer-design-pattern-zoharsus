@@ -18,23 +18,6 @@ public class ObserverPatternDemo {
 
 		Student student = new Student("Zohar", "suslovich", 11161694, "zoharsus@gmail.com",courses );
 
-//		StudentView studentView = new StudentView();
-//		StudentController controller = new StudentController(student, studentView);
-//		controller.printStudentDetails(); //initial print of student details
-//
-//		student.removeCourse(CSAS4118);
-//		student.removeCourse(CSAS4119);
-//		controller.printStudentDetails(); //prints out an error message because only enrolled in 1 course
-//
-//		student.addCourse(CSAS4119);
-//		controller.printStudentDetails(); //prints information again with 2 courses
-//
-//		CourseView courseView = new CourseView();
-//		CourseController courseController = new CourseController(CSAS4117, courseView);
-//		courseController.printCourseDetails(); // Prints out all of the information about a course
-//
-//		Student student = new Student("Garett", "Chang", 123456, "changgar@shu.edu");
-
 		IdNumberObserver idObserver =  new IdNumberObserver();
 		FirstNameObserver firstNameObserver = new FirstNameObserver();
 		EmailObserver emailObserver = new EmailObserver();
